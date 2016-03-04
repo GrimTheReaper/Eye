@@ -99,7 +99,7 @@ let oldactor = null, eye_area = null
 let statusArea
 function init(metadata) {
 	let current_version = Config.PACKAGE_VERSION.split('.')
-	if (current_version.length != 3 || current_version[0] != 3) throw new Error("Strange version number (extension.js:102).")
+	if (current_version.length != 4 || current_version[0] != 3) throw new Error("Strange version number (extension.js:102).")
 		
 	switch (current_version[1]) {
 		case"4": statusArea = Main.panel._statusArea
